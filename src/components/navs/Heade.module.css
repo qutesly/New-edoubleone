@@ -1,0 +1,65 @@
+.root {
+  display: flex;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  z-index: 1000;
+  right: 0;
+}
+
+.toolbar {
+  transition: 1s ease 0.5s;
+}
+.toolbar.scrolled {
+  transition: none;
+}
+
+.scrolled,
+.noScroll {
+  background: var(--background) !important;
+  box-shadow: 0 3px 20px #0002 !important;
+}
+
+.logo {
+  height: 28px;
+  margin-right: auto;
+}
+.nav {
+  display: flex;
+  margin: 0 auto;
+  align-self: stretch;
+  align-content: stretch;
+}
+
+.nav .item,
+.popperNav {
+  display: flex;
+  padding: 0 20px;
+  color: #7f7d7e;
+  align-items: center;
+}
+.active {
+  color: var(--primary) !important;
+  font-weight: 700;
+}
+
+@media (min-width: 1200px) {
+  .logo {
+    height: 35px;
+    margin-right: 0;
+  }
+  .root {
+    border-radius: 15px;
+    right: 50% !important;
+    transform: translateX(50%) !important;
+    width: calc(100vw - 80px) !important;
+    max-width: calc(50px + var(--max-container-width)) !important;
+    margin: 60px auto !important;
+  }
+  .toolbar {
+    border-radius: 15px;
+  }
+  .scrolled {
+    margin-top: -40px;
+  }
+}

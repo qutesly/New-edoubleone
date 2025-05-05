@@ -1,0 +1,162 @@
+html,
+body {
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  background-color: var(--background);
+  color: #fff;
+}
+
+@keyframes pulsate {
+  0% {
+    background-size: 100%;
+  }
+  50% {
+    background-size: 150%;
+  }
+  100% {
+    background-size: 100%;
+  }
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+  border: 0;
+  outline: 0;
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  --primary: #ff4b0a;
+  --secondary: #0d1323;
+  --background: #17223e;
+  --grey: #9a9a9a;
+  --secondary-tet: #9593a4;
+
+  --primary-gradient: linear-gradient(118.19deg, #ffaa00 4.84%, #ff7700 100%);
+  --max-container-width: 1440px;
+  --DataGrid-headersTotalHeight: 50px !important;
+}
+
+.MuiButton-root {
+  text-transform: capitalize !important;
+}
+.text-gradient {
+  background: var(--primary-gradient);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  display: inline-block;
+  font-weight: 700;
+}
+.text-primary {
+  color: var(--primary);
+}
+.text {
+  color: var(--secondary-tet);
+  font-weight: 300 !important;
+}
+a {
+  color: var(--primary);
+  font-weight: 500;
+}
+.shadow {
+  box-shadow: 0 5px 40px #0001;
+}
+.shadow-small {
+  box-shadow: 0 5px 15px #0001;
+}
+.border {
+  border: 1px solid #e4e7ec;
+}
+.raise-on-hover {
+  transition: 0.3s ease-in-out;
+}
+.raise-on-hover:hover {
+  transform: translateY(-15px);
+}
+
+.icon-bg {
+  background: #ffece5;
+  height: 70px;
+  width: 70px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex {
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
+}
+.flex-column {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.section {
+  padding: 5vh 25px;
+}
+.header-text {
+  font-weight: 500 !important;
+  font-size: 36px !important;
+  line-height: 1.4 !important;
+}
+
+.section-header-text {
+  font-weight: 500 !important;
+  font-size: 28px !important;
+  line-height: 1.4 !important;
+}
+
+.MuiDataGrid-cell,
+.MuiDataGrid-columnHeader {
+  padding: 0 20px !important;
+}
+.MuiDialog-paper {
+  border-radius: 15px !important;
+}
+
+@media (min-width: 720px) {
+  .section {
+    padding: 10vh 35px;
+    position: relative;
+  }
+  .section-inner {
+    max-width: var(--max-container-width);
+    margin: 0 auto;
+  }
+  .header-text {
+    font-size: 56px !important;
+  }
+  .section-header-text {
+    font-size: 48px !important;
+  }
+}
+
+@media (min-width: 1200px) {
+  .pulsate-bg {
+    background-size: cover;
+    background-position: center !important;
+    background-repeat: no-repeat;
+    animation: pulsate 10s ease-in-out infinite;
+  }
+}
+
+@media (min-width: 1360px) {
+  .header-text {
+    font-size: 72px !important;
+  }
+}
