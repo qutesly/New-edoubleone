@@ -59,7 +59,19 @@ export const services = [
     icon: <UIux />,
     title: "AI Revolution",
     description:
-      "Partner with edoubleone and start implementing smart, effective AI solutions tailored to your business—no tech skills needed!",
+      "Partner with Edoubleone and start implementing smart, effective AI solutions tailored to your business—no tech skills needed!",
+  },
+  {
+    icon: <WebIcon />,
+    title: "AI Automation",
+    description:
+      "Streamline your operations with intelligent automation. We design AI-driven workflows that eliminate repetitive tasks, boost productivity, and enhance overall efficiency.",
+  },
+  {
+    icon: <HostingIcon />,
+    title: "AI Agent",
+    description:
+      "Empower your business with smart AI agents that can handle customer support, lead generation, scheduling, and more—working 24/7 to enhance user experience and reduce operational costs.",
   },
 ];
 

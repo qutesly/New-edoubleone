@@ -394,6 +394,103 @@ const AboutPage = () => {
           </Grid>
         </Box>
       </section>
+      <section className="section">
+        <Box className="section-inner">
+          <Grid
+            container
+            spacing={{
+              xs: 4,
+              lg: 12,
+            }}
+            alignItems={"center"}
+          >
+            <Grid item xs={12} md={6}>
+              <Animator timeout={1500}>
+                <Box>
+                  <Typography
+                    textTransform={"uppercase"}
+                    className="section-header-text text"
+                    mb={2}
+                  >
+                    AI Automation
+                  </Typography>
+                  <Typography className="text" mb={6}>
+                    Streamline your operations with intelligent automation. We
+                    design AI-driven workflows that eliminate repetitive tasks,
+                    boost productivity, and enhance overall efficiency.
+                  </Typography>
+
+                  <Button sx={{ color: "#fff" }}>VIEW PROJECT</Button>
+                </Box>
+              </Animator>
+            </Grid>
+            <Grid item xs={12} md={6}>
+              <Animator variant="zoom" delay={500}>
+                <Image
+                  src={require("../../../public/images/services7.png")}
+                  alt=""
+                  style={{ width: "100%", height: "auto" }}
+                />
+              </Animator>
+            </Grid>
+          </Grid>
+        </Box>
+      </section>
+      <section className="section" style={{ background: "var(--secondary)" }}>
+        <Box className="section-inner">
+          <Grid
+            container
+            spacing={{
+              xs: 4,
+              lg: 12,
+            }}
+            alignItems={"center"}
+          >
+            <Grid
+              item
+              xs={12}
+              md={6}
+              order={{
+                xs: 1,
+                md: 2,
+              }}
+            >
+              <Animator timeout={1500}>
+                <Box>
+                  <Typography className="section-header-text text" mb={2}>
+                    AI Agent
+                  </Typography>
+                  <Typography className="text" mb={6}>
+                    Empower your business with smart AI agents that can handle
+                    customer support, lead generation, scheduling, and
+                    more—working 24/7 to enhance user experience and reduce
+                    operational costs.
+                  </Typography>
+
+                  <Button sx={{ color: "#fff" }}>VIEW PROJECT</Button>
+                </Box>
+              </Animator>
+            </Grid>
+            <Grid
+              item
+              xs={12}
+              md={6}
+              order={{
+                xs: 2,
+                md: 1,
+              }}
+            >
+              <Animator variant="zoom" delay={500}>
+                <Image
+                  src={require("../../../public/images/services6.png")}
+                  alt=""
+                  style={{ width: "100%", height: "auto" }}
+                />
+              </Animator>
+            </Grid>
+          </Grid>
+        </Box>
+      </section>
       <ContactForm />
       <Footer />
     </>
